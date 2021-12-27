@@ -1,0 +1,83 @@
+body {max-width: 12in;}
+.header h2{
+  color: Black;
+  background: PowderBlue;
+  text-align: center;
+  border: 1px solid SlateBlue;
+  padding: 20px;
+  margin:0;
+  margin-bottom:12px;
+}
+.header button {
+  color: Black;
+  background: PowderBlue;
+  text-align: center;
+  border: 1px solid SlateBlue;
+  border-radius: 5px;;
+  padding: 10px;
+  margin:0px;
+  margin-top: 12px;
+  width:100%;
+}
+.header button:hover{
+  background: #a4bbcb;
+}
+
+.box{
+  border: 3px solid black;
+  padding: 5px;
+  margin: 5px;
+  height: 50vh;
+}
+.acontainer{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 4fr 1fr;
+  grid-gap: 12px;
+  grid-template-areas: "map-container content-content" "footer footer";
+}
+
+.bcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap:12px;
+}
+nav{
+  background: #E9E9E9;
+  margin: 0;
+}
+#map-container{
+  
+  grid-area: map-container;
+  
+}
+#content-container{
+  
+  grid-area: content-container;
+}
+#post-container{
+  
+  grid-area: post-container;
+  flex-grow: 3;
+}
+#gallery-container{
+  
+  grid-area: gallery-container;
+  min-width: 2.5in;
+  flex-grow: 2;
+}
+footer{
+  text-align: center;
+  grid-area: footer;
+  height: 20px
+}
+
+#map {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width:100%;
+  height:50%;
+}

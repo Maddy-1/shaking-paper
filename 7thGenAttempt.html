@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+  <nav>Navbar</nav>
+  <div class="header h2">
+    <h2>The Adventures of You</h2>
+  </div>
+  <div class = acontainer>
+    <div id = "map-container" >
+      <div class = "header"><h2>Past Adventures</h2></div>
+      <div id="map"></div>		
+        <script>
+          // from each feature, get element and assign data vars properly
+          mapboxgl.accessToken = 'pk.eyJ1IjoibWFkZHkwMiIsImEiOiJja3cycWpqanUxNjQ5MnVyb2piMGtheWJzIn0.ncXiQSShoOp7XNFZrml6rg';
+          const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
+            center: [-4.5914, 54.3509], // starting position [lng, lat]
+            zoom: 4 // starting zoom
+          });
+        </script>
+        
+      <div class = "header"><button onclick="document.location='new_post.html'">New Adventure</button></div>
+        
+    </div>
+    <div class = "bcontainer">
+    <div id = "post-container">
+      <div class = "header"><h2>Write Ups</h2></div>
+
+      <div class="card" style="width:6in; margin:auto;">
+        <div class = "row">
+          <div class = "col-sm-12">
+            <h5 class="card-header" style="padding:5px;">Post Title...  </h5>
+          </div>
+        </div>
+
+        <div class = "row no-gutters">
+          <div class="col-sm">
+            <img src="images\default-image.png" class="card-img-top" alt="default image" style="max-block-size:20vh;">
+          </div>
+        
+          <div class="col-sm-8">
+            <div class="card-body">
+              <p class="card-text">National secrets shouldn't be kept here nor discussed via this thing. Lorem Ipsum and so on</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-footer text-muted" style="display:flex; justify-content: space-between; padding:5px;">
+          <a href="#" class="button" >Go to post</a>
+          <p style="margin:0px;"> Date posted</p>
+        </div>
+      </div>
+    </div>
+
+    <div id = "gallery-container">
+      <div class = "header"><h2>Gallery</h2></div>
+      <div class="card mb-3" style="margin:auto; padding:5px;max-width:2.5in;">
+        <img class="card-img-top" src="images/default-image.png" alt="Card image cap" >
+        <div class="card-body" style ="padding:5px;">
+          <p class="card-text">Default image</p>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+    <footer>I woz here</footer>
+  </div>
+  
+</body>
+</html>
