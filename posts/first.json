@@ -1,0 +1,23 @@
+{
+  "start_point":"KES",
+  "date":"18/12/2021",
+  "lat":"12.34343434",
+  "long":"34.12121212",
+  "main_text":"Did some stuff here",
+  "image":"images/default-image.png",
+  "weather": {
+    "sun":0,
+    "rain":1,
+    "wind":0,
+    "cloud":1,
+    "snow":0,
+    "lightning":0,
+    "hail":1
+  },
+  "specifications":{
+    "distance":6.4,
+    "time":"23:34",
+    "average_velocity":0,
+    "bogginess":2
+  }
+}

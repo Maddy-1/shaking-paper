@@ -7,7 +7,59 @@
 </head>
 <body>
   <form name="new_post_form" method="post" action="postserver.php" enctype="multipart/form-data">
-    <button onclick="document.location='postserver.php'">Doom?</link>
+    <!-- <button onclick="document.location='postserver.php'">Doom?</link> -->
+      <fieldset>
+        <legend>Details:</legend>
+        <label for="start_point">Start Point:</label>
+        <input type="text" id = "start_point" name = "start_point">
+        <label for="date">Date:</label>
+        <input type="date" id = "date" name = "date"><br>
+        <label for="lat">Latitude:</label>
+        <input type="number" step = 0.0001 id = "lat" name = "lat">
+        <label for="long">Longitude:</label>
+        <input type="number" step = 0.0001 id = "long" name = "long">
+      </fieldset>
+      <fieldset>
+        <legend>Main</legend>
+      <label for="main_text">Tell me about it:</label>
+      <input type="text" id="main_text" name="main_text"><br>
+      <label for ="image_upload">Upload an image:</label>
+      <input type="file" accept="image/png, image/jpeg">
+      </fieldset>
+      <fieldset>
+        <legend>Specifications:</legend>
+        <fieldset>
+          <legend>Weather</legend>
+          <label for="sun">Sun:</label>
+          <input type="radio" id ="sun" name = "sun">
+          <label for="rain">Rain:</label>
+          <input type="radio" id ="rain" name = "rain">
+          <label for="wind">Wind:</label>
+          <input type="radio" id ="wind" name = "wind">
+          <label for="cloud">Cloud:</label>
+          <input type="radio" id ="cloud" name = "cloud">
+          <label for="snow">Snow:</label>
+          <input type="radio" id ="snow" name = "snow">
+          <label for="lightning">Lightning:</label>
+          <input type="radio" id ="lightning" name = "lightning">
+          <label for="hail">Hail:</label>
+          <input type="radio" id ="hail" name = "hail">
+        </fieldset>
+        
+        <fieldset>
+          <legend>Extras</legend>
+          <label for="distance">Distance:</label>
+          <input type="number" step = 0.01 id = "distance" name = "distance"><br>
+          <label for="time">Time:</label>
+          <input type="time" id = "time" name = "time"><br>
+          <label for="average_velocity">Average velocity:</label>
+          <input type="number" step = 0.01 id = "average_velocity" name = "average_velocity"><br>
+          <label for="bogginess">Bogginess:</label>
+          <input type="number" step = 1 id = "bogginess" name = "bogginess">
+        </fieldset>
+      </fieldset>
+
+      <input type="submit" id ="sumbit">
   </form> 
 </body>
 </html>

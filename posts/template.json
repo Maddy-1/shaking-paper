@@ -1,0 +1,23 @@
+{
+  "start_point":"",
+  "date":"00/00/0000",
+  "lat":"",
+  "long":"",
+  "main_text":"",
+  "image":"",
+  "weather": {
+    "sun":0,
+    "rain":0,
+    "wind":0,
+    "cloud":0,
+    "snow":0,
+    "lightning":0,
+    "hail":0
+  },
+  "specifications":{
+    "distance":0,
+    "time":0,
+    "average_velocity":0,
+    "bogginess":0 
+  }
+}
