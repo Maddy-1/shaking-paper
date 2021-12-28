@@ -1,12 +1,21 @@
-body {max-width: 12in;}
+body{background:#000;}
+
+.titlebox{
+  color: Black;
+  background: PowderBlue;
+  text-align: center;
+  border: 1px solid SlateBlue;
+  padding: 40px;
+  margin:0;
+}
 .header h2{
   color: Black;
   background: PowderBlue;
   text-align: center;
   border: 1px solid SlateBlue;
   padding: 20px;
-  margin:0;
   margin-bottom:12px;
+  
 }
 .header button {
   color: Black;
@@ -23,17 +32,11 @@ body {max-width: 12in;}
   background: #a4bbcb;
 }
 
-.box{
-  border: 3px solid black;
-  padding: 5px;
-  margin: 5px;
-  height: 50vh;
-}
 .acontainer{
   display:grid;
   height: 100vh;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 4fr 1fr;
+  grid-template-rows: 3fr 1fr;
   grid-gap: 12px;
   grid-template-areas: "map-container content-content" "footer footer";
 }
@@ -46,28 +49,34 @@ body {max-width: 12in;}
 }
 nav{
   background: #E9E9E9;
-  margin: 0;
+  margin: 0px 0px 12px 0px;
+  border: 1px solid slateblue;
+  border-top: 0px;
 }
 #map-container{
-  
   grid-area: map-container;
-  
+  flex-grow: 1;
 }
+
 #content-container{
-  
   grid-area: content-container;
 }
+
 #post-container{
-  
   grid-area: post-container;
   flex-grow: 3;
 }
+
 #gallery-container{
-  
   grid-area: gallery-container;
-  min-width: 2.5in;
-  flex-grow: 2;
+  flex-grow: 1;
 }
+
+#photos{
+  display:flex;
+  flex-direction: column;
+}
+
 footer{
   text-align: center;
   grid-area: footer;
@@ -79,5 +88,7 @@ footer{
   top: 0;
   bottom: 0;
   width:100%;
-  height:50%;
+  height:50vh;
 }
+
+
