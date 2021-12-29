@@ -6,7 +6,8 @@
   <title>New Post</title>
 </head>
 <body>
-  <form name="new_post_form" method="post" action="postserver.php" enctype="multipart/form-data">
+  <div class="new_post_form">
+  <form id = "new_post_form" name="new_post_form" method="post" enctype="multipart/form-data">
     <!-- <button onclick="document.location='postserver.php'">Doom?</link> -->
       <fieldset>
         <legend>Details:</legend>
@@ -61,5 +62,18 @@
 
       <input type="submit" id ="sumbit">
   </form> 
+  </div>
 </body>
 </html>
+
+<script>
+// put new form into JSON file somehow. Currently doesn't do anything with form props 
+function handleSubmit(e) {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const formProps = Object.fromEntries(formData);
+};
+const loginForm = document.getElementById("new_post_form"); 
+loginForm.addEventListener("submit", handleSubmit);
+
+</script>
