@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "style.css">
+  <title>Post</title>
+</head>
+<body>
+  <div class = "topbox">
+    <label for="start-point">Start Point:</label>
+    <h5 id= "start-point"></h5>
+    <label for="date">Date:</label>
+    <h5 id = "date"></h5>
+    <label for="lat">Lat:</label>
+    <h5 id = "lat"></h5>
+    <label for="long">Long:</label>
+    <h5 id = "long"></h5>
+  </div>
+
+  <div class = "main-text-area">
+    <div class = "header"><h2>Tell me about it...</h2></div>
+    <textarea id = "main-text"></textarea>
+  </div>
+
+  <div class = "image-upload-area">
+    <div class = "header"><h2>Your Photo</h2></div>
+
+    <img src="images/default-image.png" height = "400px">
+  </div>
+
+  <div class = "details">
+    <div class = "weather-box">
+      <div class = "header"><h2>Weather</h2></div>
+      <label for="sun">Sun:</label>
+      <input type ="checkbox" id = "sun" disabled>
+      <label for="rain">Rain:</label>
+      <input type ="checkbox" id = "rain" disabled>
+      <label for="wind">Wind:</label>
+      <input type ="checkbox" id = "wind" disabled>
+      <label for="cloud">Cloud:</label>
+      <input type ="checkbox" id = "cloud" disabled>
+      <label for="snow">Snow:</label>
+      <input type ="checkbox" id = "snow" disabled>
+      <label for="lightning">Lightning:</label>
+      <input type ="checkbox" id = "lightning" disabled>
+      <label for="hail">Hail:</label>
+      <input type ="checkbox" id = "hail" disabled>
+    </div>
+
+    <div class = "specs-box">
+      <div class = "header"><h2>Specifications</h2></div>
+      <label for="distance">Distance:</label>
+      <h5 id= "distance"></h5>
+      <label for="time">Time:</label>
+      <h5 id= "time"></h5>
+      <label for="average-velocity">Average Velocity:</label>
+      <h5 id= "average_velocity"></h5>
+      <label for="bogginess">Bogginess:</label>
+      <h5 id= "bogginess"></h5>
+    </div>
+  </div>
+  
+</body>
+</html>

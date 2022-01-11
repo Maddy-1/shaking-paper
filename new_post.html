@@ -65,15 +65,3 @@
   </div>
 </body>
 </html>
-
-<script>
-// put new form into JSON file somehow. Currently doesn't do anything with form props 
-function handleSubmit(e) {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-  const formProps = Object.fromEntries(formData);
-};
-const loginForm = document.getElementById("new_post_form"); 
-loginForm.addEventListener("submit", handleSubmit);
-
-</script>

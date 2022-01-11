@@ -1,4 +1,4 @@
-body{background:#000;}
+body{background:#fff;}
 
 .titlebox{
   color: Black;
@@ -31,7 +31,14 @@ body{background:#000;}
 .header button:hover{
   background: #a4bbcb;
 }
-
+.topbox{
+  color: Black;
+  background: PowderBlue;
+  text-align: center;
+  border: 1px solid SlateBlue;
+  padding: 40px;
+  margin:0;
+}
 .acontainer{
   display:grid;
   height: 100vh;
@@ -92,3 +99,8 @@ footer{
 }
 
 
+.main-text-area textarea{
+  height: 40vh;
+  width: 50vh;
+  margin:auto;
+}
